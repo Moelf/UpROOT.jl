@@ -1,0 +1,7 @@
+name = "Uproot"
+uuid = "b5a21748-ce53-11e8-2a8d-9bb528a29029"
+authors = ["Moelf <jerryling315@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
