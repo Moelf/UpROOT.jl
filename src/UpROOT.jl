@@ -1,12 +1,17 @@
-using PyCall
-
 module UpROOT
 
-getPyEle(pydict, member::String) = get(pydict, PyObject, member)
+import PyCall
+export getPyEle
 
 struct TH1D
-    Bins::Array
     Counts::Array
+    Bins::Array
 end
+
+getPyEle(pydict, member::String) = PyCall.get(pydict, PyCall.PyObject, member)
+
+function stackHis(TH1Ds::Dict{String, TH1D})
+end
+
 
 end # module
