@@ -7,6 +7,8 @@ A julia wrapper for [Uproot](https://github.com/scikit-hep/uproot) and plotting 
 
 ## Installation
 
+* Before start, make sure you have [Uproot](https://github.com/scikit-hep/uproot) installed through `pip` or `anaconda`. *
+
 The package is not registered in `METADATA.jl` yet so you will need to do this manually (it's still a one liner)
 ```julia
 Pkg> add https://travis-ci.org/Moelf/UpROOT.jl
@@ -18,5 +20,5 @@ using UpROOT
 ```
 
 ## To-Do
-- [x] Stack Histogram Plot
-- [x] Events loop
+- [] Stack Histogram Plot
+- [] Events loop
