@@ -32,7 +32,7 @@ function readTFile(path::String)
 end
 
 function getHist(x::TFile, histName::String)
-    hist = getPyEle(TFile.pyobj, histName)
+    hist = getPyEle(TFile.pyObj, histName)
     return TH1D(hist[:numpy][1],hist[:numpy][2][1:end-1])
 end
 
