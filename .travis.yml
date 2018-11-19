@@ -1,4 +1,6 @@
 language: julia
+install:
+    - pip install uproot
 os:
   - linux
 julia:
