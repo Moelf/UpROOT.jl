@@ -2,7 +2,6 @@ language: julia
 sudo: required
 
 before_install:
-    - (sudo apt-get -qq update && sudo apt-get install -y python3 python3-pip && sudo pip3 install --upgrade pip && sudo pip3 install --upgrade setuptools_scm)
     - (sudo pip3 install setuptools==24.0.3)
 install:
     - (sudo pip3 install uproot)
