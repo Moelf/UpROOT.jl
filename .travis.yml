@@ -1,9 +1,12 @@
 language: julia
-install:
-    - pip install --user uproot
+
+before_install:
+    - (sudo apt-get -qq update && sudo apt-get install -y python3 python3-pip && sudo pip3 install uproot
 os:
-  - linux
+    - linux
 julia:
-  - 1.0
+    - 1.0
+
+
 notifications:
-  email: false
+    email: false
