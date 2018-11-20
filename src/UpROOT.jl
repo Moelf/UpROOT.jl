@@ -6,7 +6,8 @@ using PyCall, Gadfly
 #This is to make sure python pointer don't break things
 const uproot= PyNULL()
 function __init__()
-    copy!(uproot, pyimport("uproot"))
+    #= copy!(uproot, pyimport("uproot")) =#
+    copy!(uproot, pyimport_conda("uproot", "uproot"))
 end
 
 struct TFile
